@@ -5,6 +5,7 @@
 - schedule
 - time
 
+## Setup
 1. set password and username 
 ```
 browser.find_element_by_id("okta-signin-username").send_keys("")
