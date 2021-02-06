@@ -21,3 +21,6 @@ options.add_argument("user-data-dir=/Users/clemens/Library/Application Support/G
 ```
 schedule.every().day.at("15:59:58").do(register_latest)
 ```
+
+# Note
+The first time you run it, it will fail due to two-factor auth. However continue manually and click don't challenge me on this device for 30 days. Then it'll work for the next 30 days.
