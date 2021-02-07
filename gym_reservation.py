@@ -62,7 +62,7 @@ def register_latest():
     far5.click()
     browser.close()
 
-schedule.every().day.at("15:59:58").do(register_latest)
+schedule.every().day.at("16:59:58").do(register_latest)
 
 while 1:
     schedule.run_pending()
