@@ -41,9 +41,14 @@ def register_latest():
             break
     reg[i-1].click()
 
-
-    far3 = browser.find_element_by_xpath("/html/body/div[5]/div[1]/div[2]/div[2]/a")
-    far3.click()
+    success = None
+    while success is None:
+        try:
+            far3 = browser.find_element_by_xpath("/html/body/div[5]/div[1]/div[2]/div[2]/a")
+            far3.click()
+            success = True
+        except:
+            pass
 
     far4 = browser.find_element_by_xpath("/html/body/div[5]/div[1]/div[2]/form[2]/div[2]/button[2]")
     far4.click()
