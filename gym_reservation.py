@@ -135,7 +135,7 @@ def register_latest(target_time):
 
 register_latest((13,24,45))
 
-schedule.every().day.at("16:56:00").do(register_latest((17,0,0)))
+schedule.every().day.at("16:56:00").do(register_latest,(17,0,0))
 
 while 1:
     schedule.run_pending()
