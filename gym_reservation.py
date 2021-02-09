@@ -123,7 +123,7 @@ def register_latest(target_time):
     success = None
     while success is None:
         try:
-            browser.implicitly_wait()
+            browser.implicitly_wait(3)
             far5 = browser.find_element_by_xpath("/html/body/div[5]/div[1]/div[2]/div[5]/div/div/div[2]/div/div[2]/button")
             far5.click()
             success = True
