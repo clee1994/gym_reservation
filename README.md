@@ -4,6 +4,7 @@
 - selenium
 - schedule
 - time
+- pause
 
 ## Setup
 1. set password and username 
